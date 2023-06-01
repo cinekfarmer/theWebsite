@@ -1,0 +1,158 @@
+:root {
+  --odd: #222;
+  --even: #333;
+  --text: #dedede;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--text);
+  font-size: 20px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: var(--text);
+}
+
+header {
+  background-color: var(--even);
+  width: 100%;
+  height: 80vh;
+  padding: 0 15px;
+  text-align: center;
+}
+
+#lang {
+  display: inline-block;
+  background-color: #f24527;
+  font-size: 30px;
+  width: 100px;
+  height: 50px;
+  border-bottom-left-radius: 100%;
+  transition: all .2s ease-in-out;
+}
+
+#lang:hover {
+  background-color: #e13416;
+}
+
+#lang > a {
+  display: block;
+  width: 100px;
+  height: 50px;
+  padding-left: 40px;
+  border-bottom-left-radius: 100%;
+}
+
+.icon-color-adjust {
+  display: inline-block;
+  background-color: var(--text);
+  color: #888;
+  font-size: 30px;  
+  width: 100px;
+  height: 50px;
+  padding-right: 40px;
+  border-bottom-right-radius: 100%;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.icon-color-adjust:hover {
+  background-color: #2761f2;
+}
+
+h1 {
+  font-size: 100px;
+  padding-top: 18vh;
+  letter-spacing: 3px;
+  margin-bottom: 2vh;
+  font-weight: 700;
+}
+
+hr {
+  margin: auto;
+  width: 600px
+}
+
+header > p {
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-top: 2vh;
+}
+
+nav {
+  width: 100%;
+  height: 20vh;
+  background-color: var(--odd);
+  padding:0;
+}
+
+ul {
+  height: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+ul > li {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  border-top: 3px solid var(--text);
+  border-bottom: 3px solid var(--text);
+  background-color: #f24527;
+}
+
+ul > li:first-child {
+  border-left: 3px solid var(--text);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+ul > li:last-child {
+  border-right: 3px solid var(--text);
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+ul > li:hover {
+  background-color: #e13416;
+}
+
+ul > li > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 5.5vh;
+  font-size: 3vw;
+}
+
+.icon-left-open {
+  display: none;
+}
+
+section {
+  min-height: 30vh;
+}
+
+section:nth-of-type(1n) {
+  background-color: var(--even);
+}
+
+section:nth-of-type(2n) {
+  background-color: var(--odd);
+}
+
+footer {
+  background-color: var(--even);
+}
