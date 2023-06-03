@@ -1,7 +1,7 @@
 :root {
-  --odd: #222;
-  --even: #333;
-  --text: #dedede;
+  --odd:#222;
+  --even:#333;
+  --text:#dedede;
 }
 
 * {
@@ -76,7 +76,10 @@ h1 {
 
 hr {
   margin: auto;
-  width: 600px
+  background-color: black;
+  color: black;
+  border-bottom-color: black;
+  width: 600px;
 }
 
 header > p {
@@ -106,6 +109,7 @@ ul > li {
   text-align: center;
   letter-spacing: 2px;
   border-right: 3px solid var(--text);
+  cursor: pointer;
 }
 
 ul > li:first-child {
@@ -201,8 +205,11 @@ h3 {
   height: 99px;
   text-align: center;
   margin: 20px;
-  background-color: #888;
-  border: 12px solid #c01204;
+  /*Photo by Ron Lach : https://www.pexels.com/photo/wrinkly-white-paper-10526880/*/
+  background-image: url(img/paper.jpg);
+  background-size: cover;
+  border: 3px solid #c01204;
+  border-radius: 10px;
   overflow: hidden;
   transition: all .4s ease-out;
 }
@@ -215,13 +222,14 @@ h3 {
 
 .project > a {
   display: block;
+  color: #000;
   height: 100%;
   width: 100%;
 }
 
 .project h3 {
   height: 75px;
-  margin-top: 10px;
+  margin-top: 20px;
   border-bottom: 1px solid #c01204;
 }
 
